@@ -23,7 +23,7 @@ O site possui cinco páginas:
 
 ## Estrutura do projeto
 
-
+```
 website-pessoal/
 ├── img/
 │   ├── fotoperfil.jpg
@@ -40,6 +40,7 @@ website-pessoal/
 ├── sobre.html
 ├── stylehorizontal.css
 └── stylevertical.css
+```
 
 ## Como executar
 
