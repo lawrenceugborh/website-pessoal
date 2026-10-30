@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="stylevertical.css">
+</head>
+<body>
+    <header>
+        <h2>Entre em contato!</h2>
+    </header>
+    
+    <main>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre mim</a></li>
+                    <li><a href="projetos.html">Meus projetos</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li><a href="formulario.html">Entre em contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="apresentacao">
+            <div class="box">
+            <h2>&#128233 Entre em contato</h2>
+                <form id="meuFormulario" action="mailto:lawrence123ana@gmail.com?subject=Formulário%20de%20Contato" method="post" enctype="text/plain">
+                    <table>
+                    <tr>
+                        <td>Nome completo:</td>
+                        <td><input type="text" name="n1" id="nome" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Idade:</td>
+                        <td><input type="number" name="i1" id="idade" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Telefone:</td>
+                        <td><input type="number" name="t1" id="telefone" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="e1" id="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Seu comentário:</td>
+                        <td><textarea name="comentario" id="comentarioid" rows="4" cols="30"></textarea></td>
+                      </tr>
+
+                    <tr>
+                        <td colspan="2">
+                        <input type="checkbox" name="c1" value="S" required> Concordo com os termos do site
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                        <input type="submit" value="Enviar"/>
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+
+                <script>
+                    function Enviar() {
+                        var nome = document.getElementById("meuFormulario");
+
+                        if (nome.value != "") {
+                            alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+                        }
+
+                        }
+                </script>
+
+                    <h2>Minhas redes</h2>
+                    <table style="margin-top: 20px;">
+                        <tr>
+                            <td>LinkedIn: <a href="https://www.linkedin.com/in/lawrence-ugborh/" target="_blank">Lawrence Ugborh</a></td>
+                        </tr>
+                        <tr>
+                            <td>Instagram: <a href="https://www.instagram.com/neonyc_" target="_blank">Lawrence</a></td>
+                        </tr>
+                    </table>
+            </div>
+            
+        </section>    
+    </main>
+
+<footer>
+<p>"Construindo meu futuro com cada linha de código."</p>
+<p>&copy; 2025 Lawrence Ugborh</p>
+</footer> 
+    
+</body>
+</html>
